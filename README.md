@@ -1,3 +1,31 @@
+# WireWatch
+
+This repository contains the associated code for
+"[WireWatch](https://www.computer.org/csdl/proceedings-article/sp/2025/223600d916/26hiVQjbZqE): Measuring the security of proprietary
+network encryption in the global Android ecosystem", published at IEEE S&P 2025. The project is currently under active
+development as the team works to streamline running WireWatch for additional longitudinal
+measurements.
+
+If you have any questions about this work, or would like access to related historical datasets, feel free to reach out to `monaw@princeton.edu`.
+
+Below is a bibtex citation of this work:
+
+```
+@inproceedings{wirewatch2025,
+  author = { Wang, Mona and Knockel, Jeffrey and Reichert, Zoë and Mittal, Prateek and Mayer, Jonathan},
+  booktitle = { 2025 IEEE Symposium on Security and Privacy (S & P) },
+  title = {{ WireWatch: Measuring the security of proprietary network encryption in the global Android ecosystem }},
+  year = {2025},
+  volume = {},
+  ISSN = {2375-1207},
+  pages = {4248-4266},
+  keywords = {},
+  doi = {10.1109/SP61157.2025.00224},
+  url = {https://doi.ieeecomputersociety.org/10.1109/SP61157.2025.00224},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  month = May}
+```
 
 ## Downloading apps
 See `scrape/` directory for more instructions on downloading applications. We utilize
