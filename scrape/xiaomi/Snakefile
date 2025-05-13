@@ -1,0 +1,33 @@
+rule all:
+  input:
+    "xiaomi-downloaded-apps.csv"
+
+rule dl_apps:
+  input:
+    "xiaomi-top-app-metadata.json"
+  output:
+    "xiaomi-downloaded-apps.csv"
+  shell:
+    "python xiaomi-apk-download.py --input {input} --output {output}"
+
+rule fetch_urls:
+  output:
+    "xiaomi-top-app-metadata.json"
+  input:
+    "xiaomi-top-app-ids.csv"
+  shell:
+    "python fetch_metadata.py --input {input} --output {output}"
+
+rule fetch_ids:
+  output:
+    "xiaomi-top-app-ids.csv"
+  input:
+    "xiaomi-top-apps.csv"
+  shell:
+    "python fetch_ids.py --input {input} --output {output}"
+
+rule pull_top_apps:
+  output:
+    "xiaomi-top-apps.csv"
+  shell:
+    "python xiaomi-pull-top-app-pkgnames.py --output {output}"

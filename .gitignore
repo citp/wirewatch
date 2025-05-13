@@ -1,0 +1,8 @@
+.snakemake
+*.json
+*.csv
+__pycache__
+*.apk
+*.xapk
+*.pcapng
+*.pcap
